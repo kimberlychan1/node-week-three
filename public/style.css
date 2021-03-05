@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Sacramento&display=swap');
+
+body {
+    background-image: url('background2.jpg');
+}
+.container {
+    background-color: rgba(235, 235, 184);
+    border-radius: 20px;
+}
+header {
+    margin-top: 5vh;
+    padding-top: 5vh;
+    font-family: 'Sacramento', cursive;
+    color: rgba(206, 65, 40, 0.979);
+    text-decoration-line: overline underline;
+    text-decoration-style: dotted;
+}
+#datetime{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color:rgb(238, 119, 119);
+    margin-bottom: 2vh;
+    font-family: 'Amatic SC', cursive;
+}
+
+#addBtn {
+    background-color: transparent;
+    border: none;
+    float: right;
+    font-size: 25px;
+}
+.saved-notes {
+    height: 65vh;
+    overflow-y: scroll;
+}
+.saved-notes::-webkit-scrollbar-thumb {
+    background-color: rgb(22, 71, 48);
+}
+.saved-notes::-webkit-scrollbar{
+    background-color: rgb(243, 245, 132);
+}
+.new-note {
+    background-color: rgb(250, 238, 219);
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: 'Amatic SC', cursive;
+    position:relative;
+}
+.delBtn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    float:right;
+    margin-left: -40px;
+    margin-top: 10px;
+}
+textarea {
+    resize: both;
+    padding: 20px;
+    outline: none;
+}

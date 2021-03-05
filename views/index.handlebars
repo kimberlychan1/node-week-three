@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="head-container">
+        <header class="text-center display-2">Write Something<br></header>
+        <span id="datetime"></span>
+    </div>
+    <div class="note-section row px-4">
+        <div class="col-6">
+            <form class="row" id="note" action='/api/notes' method='post'>
+                <div class="col-sm-9" id="text-area">
+                    <textarea rows="15" cols="35" name="comment" form="note" id="write-note"></textarea>
+                    <br><button type="submit" form="note" value="Submit" id="addBtn"><i
+                            class="fas fa-check"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="col-6 saved-notes">
+            <div class="row">
+                {{#each notes}}
+                <div class="new-note-area col">
+                    <textarea rows="5" cols="20" class="new-note"
+                        data-textarea={{this.id}}>{{ this.content }}</textarea>
+                    <button type="button" form="note" value="Submit" class="delBtn" data-delbtn={{this.id}}><i
+                            class="fas fa-times"></i></button>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
